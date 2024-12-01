@@ -3,11 +3,14 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
-    const links = <>
+    const links = <div className='md:flex gap-1'>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/addCoffee">Add Coffee</NavLink></li>
+        <li><NavLink to="/login">Log In</NavLink></li>
+        {/* <li><NavLink to="/register">Register</NavLink></li> */}
+        <li><NavLink to="/users">Admin Panel</NavLink></li>
         
-    </>
+    </div>
 
     return (
         <div className="navbar bg-base-100">
